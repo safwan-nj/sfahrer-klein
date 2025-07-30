@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/aussendienst/safwan/sfahrer/dev-sw.js?dev-sw', { scope: '/aussendienst/safwan/sfahrer/', type: 'classic' })

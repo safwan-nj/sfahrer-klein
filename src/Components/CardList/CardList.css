@@ -1,0 +1,93 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  /* background-color: var(--primaryLightBgColorTransparent); */
+  background-color: var(--primaryLightBgColorTransparent);
+  width: 98vw;
+  margin-bottom: 10px;
+  min-height: 120px; /* ارتفاع البطاقة */
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 10px;
+  padding-bottom: 20px; /* أضف هذا السطر لزيادة التباعد أسفل البطاقة */
+}
+
+
+.extra-space {
+  height: 10px;
+}
+
+.card-body .card-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondaryDarkColor);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card-body .card-text {
+  font-size: 11px;
+  color: var(--primaryDarkColor);
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px; /* إضافة تباعد سفلي للأزرار */
+  width: 100px;
+}
+
+.buttons .btn-go {
+  font-size: 24px;
+  color: var(--primaryDarkColor) !important;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttons .btn-go svg {
+  color: inherit !important;
+}
+
+.buttons .btn-sign {
+  font-size: 18px;
+  color: var(--primaryDarkColor);
+  border: none;
+  border-radius: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* هذا يجعل الحاوية الرئيسية مرجعًا لتحديد موقع الأيقونة */
+.card-container {
+  position: relative;
+}
+
+/* هذا يحدد موقع وشكل أيقونة الـ check */
+.completed-checkmark {
+  position: absolute;
+  top: 10px;       /* يمكنك تعديل هذه القيمة لتناسب تصميمك */
+  right: 10px;     /* يمكنك تعديل هذه القيمة لتناسب تصميمك */
+  color: var(--primaryLightColor) !important;  /* لون أخضر زاهي */
+  font-size: 2rem; /* حجم الأيقونة، يمكنك تعديله */
+  z-index: 10;     /* للتأكد من أنها تظهر فوق كل العناصر الأخرى */
+  background-color: white; /* خلفية بيضاء لجعلها أوضح */
+  border-radius: 50%;     /* لجعل الخلفية دائرية */
+  padding: 2px;           /* مساحة صغيرة حول الأيقونة */
+}
+
+/* هذا الكود موجود بالفعل لديك، تأكد من وجوده */
+.card-body-completed {
+  background-color: #3e4b5b !important; /* لون رمادي داكن للخلفية */
+  border-radius: 8px;
+}

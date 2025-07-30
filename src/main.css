@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root
+{
+    --clr: #fff;
+    --primaryDarkColor: #1f2937;
+    --primaryLightBgColor: #ffffff;
+    --primaryLightBgColorTransparent: #c2bfbf8e;
+    --primaryDarkColorTransparent: #1f293763;
+    --primaryLightColor: #6366f1;
+    --primaryLightColorTransparent: #6365f157;
+    --secondaryDarkColor:  #e50075;
+    --secondaryDarkColorTransparent:  #e50076b4;
+    --secondaryLightColor:  #f06eb1;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.sa-bg-main-dark{
+    background-color: var(--primaryDarkColorTransparent) !important; 
+    backdrop-filter: blur(10px); /* تأثير الضبابية */
+
+}
+.sa-bg-main-dark-transparent{
+    background-color: var(--primaryLightBgColorTransparent) !important;
+    box-shadow: 0 0 15px #000;
+    backdrop-filter: blur(10px); /* تأثير الضبابية */
+
+
+}
+.sa-bg-main-light{
+    background-color: var(--primaryLightBgColor) !important; 
+}
+.sa-bg-main-light-transparent{
+    background-color: var(--primaryLightBgColorTransparent)!important;
+}
+.sa-bg-main-secondary{
+    background-color: var(--secondaryDarkColor)!important;
+    
+}
+.sa-bg-main-secondary-light{
+    background-color: var(--secondaryLightColor)!important;
+}
+.sa-bg-transparent {
+    background-color: #a0addd3d; /* لون خلفية زجاجية */
+    backdrop-filter: blur(10px); /* تطبيق التأثير الزجاجي */
+    box-shadow: 0 4px 6px #0000001a; /* ظل لتعزيز المظهر */
+}
+.sa-bg-done-transparent {
+    background-color: var(--secondaryDarkColor); /* لون خلفية زجاجية */
+    backdrop-filter: blur(10px); /* تطبيق التأثير الزجاجي */
+    box-shadow: 0 0 15px #000;
+}
+.sa-bg-shadow-white-glow {
+    box-shadow: 0 0 10px 5px #a0addd3d !important; /* قيم الظل يمكن تعديلها */
+}
+.sa-text-main-dark{
+    color: var(--primaryDarkColor) !important; 
+}
+.sa-text-main-light{
+    color: var(--primaryLightBgColor) !important; 
+}
+.sa-text-main-dark-transparent{
+    color: var(--primaryDarkColorTransparent) !important; 
+}
+.sa-text-main-secondary{
+    color: var(--secondaryDarkColor)!important;
+}
+.sa-text-main-secondary-light{
+    color: var(--secondaryLightColor)!important;
+}
+.onTop{
+    z-index: 9999 !important;
+}
+.border-secondary-dark{
+    border: 1px solid var(--secondaryDarkColor) !important;
+}

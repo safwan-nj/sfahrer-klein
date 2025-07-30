@@ -1,0 +1,12 @@
+.app-container {
+  width: 100%;
+  
+}
+
+.card-list-container {
+  height: 95vh;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll !important;
+}

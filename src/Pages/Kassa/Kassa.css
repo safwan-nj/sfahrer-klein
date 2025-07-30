@@ -1,0 +1,6 @@
+.home {
+    height: 100vh;
+    background-color: var(--primaryDarkColor);
+    color : var(--clr);
+    z-index: 1;
+}

@@ -1,0 +1,61 @@
+.tutorial-card {
+    width: 65%;
+    margin: 0 auto; /* توسيط الإطار */
+    text-align: center; /* توسيط النص داخل الإطار */
+    display: flex; /* تحديد استخدام Flexbox */
+    flex-direction: column; /* تحديد ترتيب العناصر عموديًا */
+    align-items: center; /* توسيط العناصر عموديًا داخل الإطار */
+    margin-bottom: 5px;
+}
+
+.tutorial-image {
+    border-radius: 10px; /* تحديد شكل الزوايا */
+    padding: 15px; /* التباعد الداخلي للإطار */
+    width: 65%; /* عرض الصورة يكون 100% من عرض الإطار الأب */
+    max-width: 500px; /* أقصى عرض للصورة */
+    height: auto; /* لضمان الاحتفاظ بتناسق النسب */
+    object-fit: cover; /* لضمان احتواء الصورة داخل الإطار بدون تشويه */
+}
+
+.tutorial-details {
+    color: var(--clr); /* لون النص الأبيض */
+    font-size: 12px;
+    margin: 2vh; /* التباعد الداخلي للإطار */
+}
+
+.tutorial-details1 {
+    font-size: 12px;
+    margin: 2vh; /* التباعد الداخلي للإطار */
+}
+
+/* تخصيص لون المؤشرات في Slick Carousel إلى اللون الأبيض */
+.slick-dots {
+    position: relative;
+    top: -5px; /* تباعد عمودي مخصص */
+}
+
+.slick-dots li {
+    margin: -3px; /* تباعد أفقي مخصص بين المؤشرات */
+}
+
+.slick-dots li button:before {
+    color: var(--secondaryDarkColor) !important;
+    font-size: 0.5rem;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--clr) !important;
+    opacity: 1;
+}
+
+
+
+/* استعلامات الوسائط للشاشات الصغيرة */
+@media (max-width: 640px) {
+    .tutorial-image {
+        width:100% !important;
+        max-width: 100% ; /* أقصى عرض للصورة */
+        border-radius: 10px!important; /* تحديد شكل الزوايا */
+        height: 75% !important; /* لضمان الاحتفاظ بتناسق النسب */
+    }
+}

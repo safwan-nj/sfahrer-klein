@@ -1,0 +1,140 @@
+
+.card {
+  position: relative;
+  bottom: 2.4rem;
+  background-color: var(--primaryDarkColor);
+  border-radius: 5px;
+  box-shadow: 0 0 15px #000;
+  color: var(--primaryLightColor);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  transform: scaley(0.5) scaleX(0.8) translateY(-20%);
+}
+  
+  /* نظافة الكلاسات المعدودة للبطاقة */
+  .card:hover {
+    /* transform: scaley(0.8) scaleX(0.9); */
+    /* margin-bottom: 30px; */
+    box-shadow: 0 0 20px #000;
+    background-color: var(--primaryDarkColor);
+    color: var(--primaryDarkColor);
+    border-radius: 10px;
+    border: 1px solid var(--primaryDarkColor);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-top {
+    /* تخصيص تصميم البطاقة العلوية */
+    background-color: var(--secondaryDarkColor);
+    height: 75px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #000;
+    padding: 10px;
+    color: var(--primaryDarkColor);
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .name {
+    /* تخصيص تصميم الاسم */
+    color: var(--clr);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    /* تخصيص تصميم البطاقة الجسم */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primaryLightColor);
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #000;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: var(--clr);
+    font-size: 0.8rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card-body .avatar {
+    /* تخصيص تصميم الصورة */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--clr);
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-bottom {
+    /* تخصيص تصميم البطاقة السفلية */
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #000;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: var(--clr);
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card-bottom .button-container {
+    /* تخصيص تصميم الحاوية للأزرار */
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-bottom button {
+    /* تخصيص تصميم الزر */
+    /* cursor: pointer; */
+    box-shadow: 0 0 5px #000;
+    z-index: 0;
+  }
+/* تخصيص لون المؤشرات في Slick Carousel إلى اللون الأبيض */
+.slick-dots {
+    position: relative;
+    top: -45px; /* تباعد عمودي مخصص */
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; /* تباعد أفقي مخصص بين المؤشرات */
+  }
+  
+  .slick-dots li button:before {
+    color: var(--secondaryDarkColor) !important;
+    font-size: 0.5rem;
+}
+.slick-dots li.slick-active button:before {
+    color: var(--primaryDarkColor) !important;
+    opacity: 1;
+  }
+  .active-card {
+    pointer-events: pointer; /* تعطيل التفاعل مع البطاقة */
+    opacity: 1; /* تقليل الشفافية لتظهر البطاقة كغير فعالة */
+  }
+  .inactive-card {
+    pointer-events: pointer; /* تعطيل التفاعل مع البطاقة */
+    opacity: 0.7; /* تقليل الشفافية لتظهر البطاقة كغير فعالة */
+  }
+    /* CSS for desktop screens */
+@media (min-width: 768px) {
+  .card {
+      width: 99vw;
+  }
+}

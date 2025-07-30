@@ -1,0 +1,69 @@
+
+/* Tutorial.css */
+
+
+.slick-prev,
+.slick-next {
+    z-index: 1000; /* ضع الأزرار في الطبقة الأمامية */
+}
+
+.slick-prev {
+    left: 0; /* المسافة من الحافة اليسرى */
+}
+
+.slick-next {
+    right: 0; /* المسافة من الحافة اليمنى */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 24px; /* حجم الأزرار */
+    color: #ffffff; /* لون الأزرار */
+}
+
+
+
+
+/* ضمان أن الـ Slider يحترم الحدود */
+.tut-slider-container {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    padding-bottom: 5px; /* مساحة إضافية للنقاط أسفل الـ Slider */
+  }
+
+  
+  /* تنسيق المؤشرات النقطية */
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 5px; /* المسافة بين الـ Slider والنقاط */
+    list-style: none;
+    z-index: 10; /* التأكد من ظهور النقاط فوق أي عناصر أخرى */
+  }
+  
+  .slick-dots li {
+    margin: 0; /* التباعد بين النقاط */
+  }
+  
+  .slick-dots li button {
+    width: 1px;
+    height: 1px;
+    margin: 2px !important;
+    padding: 4px; /* المسافة بين النقاط */
+    background: #999; /* اللون الافتراضي للنقاط */
+    text-indent: -9999px; /* إخفاء النص الافتراضي */
+    cursor: pointer;
+  }
+  
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    background: #ddd; /* لون النقطة عند التمرير أو التركيز */
+  }
+  
+  .slick-dots li.slick-active button {
+    background: var(--secondaryDarkColor); /* لون النقطة النشطة */
+  }
+

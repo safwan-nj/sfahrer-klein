@@ -1,0 +1,67 @@
+.app-container {
+  width: 100%;
+}
+
+.card-list-container {
+  height: 95vh;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll !important;
+}
+
+.buttons .btn-go {
+  position: relative;
+  font-size: 18px; /* حجم النص في الأزرار */
+  color: var(--clr);
+  border: none;
+  border-radius: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* تأثير الانزلاق من الأعلى إلى الأسفل */
+.slide-down {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* تأثير الانزلاق للأعلى عند الإغلاق */
+.slide-up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* أنماط إضافية للمودال لضمان التغطية الكاملة */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.7); /* خلفية شفافة داكنة */
+}

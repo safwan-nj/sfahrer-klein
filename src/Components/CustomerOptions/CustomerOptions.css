@@ -1,0 +1,39 @@
+.customer_options {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    /* add shadow under */
+    box-shadow: 0 0 5px 5px #000 !important;
+    z-index: 99;
+}
+.lines-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-container select {
+    background-color: var(--secondaryLightColor);
+}
+.options-buttons{
+    padding-top: 40vh;
+}
+.form-control {
+    padding: 20px 0; /* زيادة الارتفاع لكل عنصر داخل القائمة */
+    color: var(--primaryDarkColor); /* تغيير لون النص داخل القائمة المنسدلة إلى اللون الأبيض */
+    font-size: 1.2rem; /* زيادة حجم النص داخل القائمة */
+    background-color: var(--clr); /* تغيير لون خلفية العناصر داخل القائمة المنسدلة إلى اللون الأبيض */
+}
+.form-control option {
+    background-color: var(--clr); /* تغيير لون خلفية العناصر داخل القائمة المنسدلة إلى اللون الأبيض */
+    color: var(--primaryDarkColor); /* تغيير لون النص داخل القائمة المنسدلة إلى اللون الأسود */
+}
+/* CSS for desktop screens */
+@media (min-width: 768px) {
+    
+}

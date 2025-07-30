@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- QR GENERATOR  -->
+    <!-- API DOCS: https://goqr.me/api/doc/create-qr-code/ -->
+    <div class="container">
+        <input id="qr" placeholder="Enter URL">
+        |<img alt="QR Code" id="qrimg">
+        <button
+            onclick="qrimg.src= 'http://api.qrserver.com/v1/create-qr-code/?size=100x100&data= '+ qr.value ">
+            Generate QR
+        </bttons
+    </div>
+
+
+</body>
+</html>

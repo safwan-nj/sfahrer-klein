@@ -1,0 +1,10 @@
+.camera{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    /* add shadow under */
+    box-shadow: 0 0 5px 5px #000 !important;
+    background-color: var(--primaryDarkColorTransparent);
+    z-index: 99;
+}
